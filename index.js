@@ -21,3 +21,22 @@ function nowServing(deliLine) {
   
 }
 
+
+function currentLine(deliLine) {
+  var line
+  
+  if (deliLine.length > 0) {
+    line = "The line is currently: "
+    
+    for (var i=0; i < deliLine.length; i++) {
+      line += `${i+1}. ${deliLine[i]},`
+    }
+    line = line.slice(0, -1)
+    
+  }else {
+    line = "The line is currently empty."
+  }
+  
+  return line
+}
+
