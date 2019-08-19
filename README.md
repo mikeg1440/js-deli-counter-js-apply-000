@@ -26,8 +26,8 @@ function nowServing(deliLine) {
   var msg, nextUp
   
   if (deliLine.length > 0) {
-    nextUp = deliLine[0]
-    deliLine
+    nextUp = deliLine.shift()
+    
   } else {
     msg = "There is nobody waiting to be served!"
   }
