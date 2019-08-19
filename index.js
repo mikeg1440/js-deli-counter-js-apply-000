@@ -3,7 +3,7 @@
 
 function takeANumber(deliLine, name) {
   
-  katzDeli.push(name)
+  deliLine.push(name)
   
   return `Welcome, ${name}. You are number ${deliLine.length+1} in line.`
 }
