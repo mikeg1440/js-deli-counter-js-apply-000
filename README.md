@@ -23,13 +23,15 @@ function takeANumber(people, name) {
 
 function nowServing(deliLine) {
   
-  var msg, nextUp
+  var nextUp
   
   if (deliLine.length > 0) {
     nextUp = deliLine.shift()
   } else {
-    msg = "There is nobody waiting to be served!"
+    nextUp = "There is nobody waiting to be served!"
   }
+  
+  return nextUp
   
 }
 
