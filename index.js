@@ -3,9 +3,11 @@
 
 function takeANumber(deliLine, name) {
   
+  var msg = `Welcome, ${name}. You are number ${deliLine.length+1} in line.`
+  
   deliLine.push(name)
   
-  return `Welcome, ${name}. You are number ${deliLine.length+1} in line.`
+  return msg
 }
 
 
